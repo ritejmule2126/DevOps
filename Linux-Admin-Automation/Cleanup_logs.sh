@@ -9,4 +9,4 @@ echo "Cleaning up old logs in $LOG_DIR older than $DAYS days..."
 
 find $LOG_DIR -type f -name "*.log" -mtime +$DAYS -exec rm -f {} \; 2>/dev/null
 
-echo "Log cleanup completed on $(date)"
+echo "Log cleanup completed on $(date)" 
