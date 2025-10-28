@@ -33,8 +33,6 @@ Directories: /var/log , /home/user/backup
 ---
 
 ## 📁 Project Structure
-bash
-Copy code
 linux-admin-automation/
 │
 ├── cleanup_logs.sh       # Deletes old log files
