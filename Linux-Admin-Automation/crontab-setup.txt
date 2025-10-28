@@ -1,0 +1,5 @@
+0 2 * * * /home/ritej/scripts/backup_data.sh
+0 3 * * 0 /home/ritej/scripts/cleanup_logs.sh
+*/30 * * * * /home/ritej/scripts/monitor_disk.sh
+0 1 * * * /home/ritej/scripts/update_system.sh
+*/10 * * * * /home/ritej/scripts/service_checker.sh
