@@ -32,19 +32,6 @@ Directories: /var/log , /home/user/backup
 
 ---
 
-## 📁 Project Structure
-linux-admin-automation/
-│
-├── cleanup_logs.sh       # Deletes old log files
-├── backup_data.sh        # Creates compressed backups
-├── update_system.sh      # Updates and upgrades packages
-├── monitor_disk.sh       # Monitors disk usage and sends alerts
-├── check_services.sh     # Checks and restarts critical services
-├── crontab-setup.txt     # Example cron job configurations
-└── README.md             # Project documentation
-
----
-
 ## 👩‍💻 Author
 Ritej Mule - DevOps Fresher
 📧 Email: ritejmule2612@gmail.com
