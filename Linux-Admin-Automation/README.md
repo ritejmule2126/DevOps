@@ -24,30 +24,15 @@ It helps system administrators save time, reduce manual errors, and ensure smoot
 
 ---
 
-💻 Tech Stack
-Operating System: Linux (Ubuntu/Debian)
+## 💻 Tech Stack
+ OS: Ubuntu 
+ Linux Language: Bash 
+ Tools: APT, systemctl, tar, find, mail 
+Directories: /var/log , /home/user/backup
 
-Language: Bash Shell Scripting
+---
 
-Core Utilities:
-
-find — delete old logs
-
-tar — compress backups
-
-apt — update & upgrade packages
-
-df, awk, sed — monitor disk usage
-
-systemctl — manage and check services
-
-mail — send email alerts
-
-cron — schedule automation tasks
-
-Privileges: Root or sudo access for administrative commands
-
-📁 Project Structure
+## 📁 Project Structure
 bash
 Copy code
 linux-admin-automation/
@@ -60,7 +45,9 @@ linux-admin-automation/
 ├── crontab-setup.txt     # Example cron job configurations
 └── README.md             # Project documentation
 
-👩‍💻 Author
+---
+
+## 👩‍💻 Author
 Ritej Mule - DevOps Fresher
 📧 Email: ritejmule2612@gmail.com
 💼 Portfolio: https://ritejportfolio.kesug.com
