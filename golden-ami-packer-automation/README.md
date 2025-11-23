@@ -32,7 +32,7 @@ The output AMI comes with **Nginx preinstalled** and a **custom welcome page** a
 
 ## 📂 File Structure
 
-├── goldenimage.pkr.hcl # Main Packer template
+├── goldenimage.pkr.hcl # Main Packer template  
 └── README.md # Documentation
 
 ---
@@ -41,14 +41,14 @@ The output AMI comes with **Nginx preinstalled** and a **custom welcome page** a
 
 ### 1️⃣ Required Plugins
 
-packer {
-required_plugins {
-amazon = {
-version = ">= 1.0.0"
-source = "github.com/hashicorp/amazon"
-}
-}
-}
+packer {  
+required_plugins {  
+amazon = {  
+version = ">= 1.0.0"  
+source = "github.com/hashicorp/amazon"  
+}  
+}  
+}  
 
 This section tells Packer to use the **Amazon** plugin for building AMIs on AWS.
 
@@ -56,16 +56,16 @@ This section tells Packer to use the **Amazon** plugin for building AMIs on AWS.
 
 ### 2️⃣ Source AMI Block (amazon-ebs Builder)
 
-source "amazon-ebs" "golden-ami" {
-ami_name = "golden-ami-{{timestamp}}"
-instance_type = "t3.micro"
-region = "ap-south-1"
-source_ami = "ami-02b8269d5e85954ef"
-ssh_username = "ubuntu"
-ami_description = "An Ubuntu Linux 2 AMI with Nginx installed and configured to serve a static website."
-}
-
-Key points:
+source "amazon-ebs" "golden-ami" {  
+ami_name = "golden-ami-{{timestamp}}"  
+instance_type = "t3.micro"  
+region = "ap-south-1"  
+source_ami = "ami-02b8269d5e85954ef"  
+ssh_username = "ubuntu"  
+ami_description = "An Ubuntu Linux 2 AMI with Nginx installed and configured to serve a static website."  
+}  
+ 
+Key points:  
 
 - `ami_name`: AMI name with a timestamp suffix for uniqueness  
 - `instance_type`: Uses a cost-effective `t3.micro` instance during build  
@@ -78,12 +78,12 @@ Key points:
 
 ### 3️⃣ Provisioner (Nginx Setup + Webpage Deployment)
 
-build {
+build {  
 sources = [
 "source.amazon-ebs.golden-ami"
 ]
 
-provisioner "shell" {
+provisioner "shell" {  
 inline = [
 "sudo apt update -y",
 "sudo apt install nginx -y",
@@ -91,9 +91,9 @@ inline = [
 "sudo rm /var/www/html/*.html",
 "echo '<html><body><h1>Welcome to the Golden AMI Website! powered by DIM Nov team </h1></body></html>' | sudo tee /var/www/html/index.html",
 "sudo systemctl start nginx"
-]
-}
-}
+]  
+}  
+}  
 
 This build block:
 
