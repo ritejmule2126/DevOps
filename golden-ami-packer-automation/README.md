@@ -184,9 +184,9 @@ Golden AMIs help teams:
 
 You can enhance this README by adding:
 
- ![Screenshot](images/1.png)
+ ![Screenshot](ami-image/1.png)
 
- ![Screenshot](images/2.png)
+ ![Screenshot](ami-image/2.png)
 
 
 Example (after adding images to your repo):
