@@ -205,10 +205,5 @@ Contributions are welcome!
 - Commit your changes  
 - Open a Pull Request describing your improvements  
 
----
 
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the `LICENSE` file for full details.
 
