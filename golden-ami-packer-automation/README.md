@@ -180,13 +180,14 @@ Golden AMIs help teams:
 
 ---
 
-## 📸 Sample Screenshot (Optional)
+## 📸 Screenshot 
 
 You can enhance this README by adding:
 
-- Screenshot of the Packer build output  
-- Screenshot of the AMI in the AWS EC2 console  
-- Screenshot of the Nginx welcome page in a browser  
+ ![Screenshot](images/1.png)
+
+ ![Screenshot](images/2.png)
+
 
 Example (after adding images to your repo):
 
